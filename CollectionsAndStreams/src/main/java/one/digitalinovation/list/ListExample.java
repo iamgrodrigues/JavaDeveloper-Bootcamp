@@ -2,6 +2,7 @@ package one.digitalinovation.list;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class ListExample {
@@ -53,6 +54,17 @@ public class ListExample {
         boolean emptyList = names.isEmpty();
 
         System.out.println(emptyList);
+
+        for (String itemName: names) {
+
+            System.out.println("---> " + itemName);
+        }
+
+        Iterator<String> iterator = names.iterator();
+
+        while (iterator.hasNext()) {
+            System.out.println("------> " + iterator.next());
+        }
 
         names.clear();
 
