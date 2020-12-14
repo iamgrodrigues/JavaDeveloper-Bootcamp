@@ -21,9 +21,9 @@ public class TreeSetExample {
 
         System.out.println("Which is the last Capital in the tree? " + capitalsTree.last());
 
-        System.out.println("Which Capital is below the Capital Florianópolis? " + capitalsTree.lower("Florianópolis"));
+        System.out.println("Which Capital is lower/before the Capital Florianópolis? " + capitalsTree.lower("Florianópolis"));
 
-        System.out.println("Which Capital is above the Capital Florianópolis? " + capitalsTree.higher("Florianópolis"));
+        System.out.println("Which Capital is higher/after the Capital Florianópolis? " + capitalsTree.higher("Florianópolis"));
 
         System.out.println(capitalsTree);
 
