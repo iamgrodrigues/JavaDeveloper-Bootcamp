@@ -3,7 +3,7 @@ package one.digitalinovation.set;
 import java.util.Iterator;
 import java.util.TreeSet;
 
-public class Exercise {
+public class TreeSetExercise {
 
     public static void main(String[] args) {
 
@@ -23,12 +23,14 @@ public class Exercise {
 
         numericalSequence.remove(numericalSequence.first());
 
+        System.out.println(numericalSequence);
+
         numericalSequence.add(23);
 
         System.out.println(numericalSequence);
 
-        System.out.println("How many numbers does this tree have? " + numericalSequence.size());
+        System.out.println("How many numbers does this TreeSet have? " + numericalSequence.size());
 
-        System.out.println("Is the tree empty? " + numericalSequence.isEmpty());
+        System.out.println("Is the TreeSet empty? " + numericalSequence.isEmpty());
     }
 }

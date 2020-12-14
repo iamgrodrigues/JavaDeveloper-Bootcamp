@@ -1,13 +1,13 @@
 package one.digitalinovation.set;
 
+import java.util.HashSet;
 import java.util.Iterator;
-import java.util.TreeSet;
 
-public class TreeSetExercise {
+public class HashSetExercise {
 
     public static void main(String[] args) {
 
-        TreeSet<Integer> numericalSequence = new TreeSet<>();
+        HashSet<Integer> numericalSequence = new HashSet<>();
 
         numericalSequence.add(3);
         numericalSequence.add(88);
@@ -21,14 +21,16 @@ public class TreeSetExercise {
             System.out.println(iterator.next());
         }
 
-        numericalSequence.remove(numericalSequence.first());
+        numericalSequence.remove(numericalSequence.stream().findFirst());
+
+        System.out.println(numericalSequence);
 
         numericalSequence.add(23);
 
         System.out.println(numericalSequence);
 
-        System.out.println("How many numbers does this tree have? " + numericalSequence.size());
+        System.out.println("How many numbers does this HashSet have? " + numericalSequence.size());
 
-        System.out.println("Is the tree empty? " + numericalSequence.isEmpty());
+        System.out.println("Is the HashSet empty? " + numericalSequence.isEmpty());
     }
 }
