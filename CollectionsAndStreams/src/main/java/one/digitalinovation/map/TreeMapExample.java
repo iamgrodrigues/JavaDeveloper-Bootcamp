@@ -1,4 +1,4 @@
-package one.digitalinovation.map.teste;
+package one.digitalinovation.map;
 
 import java.util.Iterator;
 import java.util.Map;
