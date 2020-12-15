@@ -65,5 +65,17 @@ public class TreeMapExample {
             System.out.println(capital.getKey() + " --- " + capital.getValue());
         }
 
+        System.out.println("----------- Exercises of Comparators Lecture -----------");
+
+        System.out.println("----- natural numbers order by key -----");
+
+        System.out.println(capitalsTree);
+
+        Map<String, String> reversedTreeMap = capitalsTree.descendingMap();
+
+        System.out.println("----- reversed numbers order by key -----");
+
+        System.out.println(reversedTreeMap);
+
     }
 }

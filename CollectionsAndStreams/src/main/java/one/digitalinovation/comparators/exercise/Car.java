@@ -1,4 +1,4 @@
-package one.digitalinovation.comparators;
+package one.digitalinovation.comparators.exercise;
 
 public class Car implements Comparable<Car> {
 
@@ -20,8 +20,11 @@ public class Car implements Comparable<Car> {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "model='" + model + '\'' +
-                '}';
+        return model + " - " + year;
+    }
+
+    @Override
+    public int compareTo(Car o) {
+        return this.getYear() - o.getYear();
     }
 }
