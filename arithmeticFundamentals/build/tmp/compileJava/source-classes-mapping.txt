@@ -1,3 +1,5 @@
+Challenges/InputAnalysis.java
+ Challenges.InputAnalysis
 Challenges/PositiveNumbers.java
  Challenges.PositiveNumbers
 Challenges/EvenNumbers.java

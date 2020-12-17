@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09d1a144-b802-450e-aecb-18fe6cef184c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Challenges/EvenNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Challenges/InputAnalysis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,9 +46,22 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.other" />
   </component>
-  <component name="RunManager" selected="Application.EvenNumbers">
+  <component name="RunManager" selected="Application.InputAnalysis">
     <configuration name="EvenNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Challenges.EvenNumbers" />
+      <module name="arithmeticFundamentals.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Challenges.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InputAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Challenges.InputAnalysis" />
       <module name="arithmeticFundamentals.main" />
       <extension name="coverage">
         <pattern>
@@ -76,6 +88,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InputAnalysis" />
         <item itemvalue="Application.EvenNumbers" />
         <item itemvalue="Application.PositiveNumbers" />
       </list>
