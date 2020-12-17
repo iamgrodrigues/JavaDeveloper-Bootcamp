@@ -53,8 +53,11 @@ public class InputAnalysis {
             Integer values = Integer.parseInt(st.nextToken());
             if ( values > 0 ) {
                 positives++;
-            }else if (values == 0){}
-            else {
+            }//else if (values == 0){}          note: this part can be solved with only the else if clause,
+//            else {                            no need on using else if and else...
+//                negatives++;
+//            }
+            else if ( values < 0){
                 negatives++;
             }
 
