@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09d1a144-b802-450e-aecb-18fe6cef184c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Challenges/BankNotesCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Challenges/AvgFuelConsumption.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
@@ -54,7 +54,20 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.other" />
   </component>
-  <component name="RunManager" selected="Application.BankNotesCount">
+  <component name="RunManager" selected="Application.AvgFuelConsumption">
+    <configuration name="AvgFuelConsumption" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Challenges.AvgFuelConsumption" />
+      <module name="arithmeticFundamentals.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Challenges.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BankNotesCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Challenges.BankNotesCount" />
       <module name="arithmeticFundamentals.main" />
@@ -109,6 +122,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AvgFuelConsumption" />
         <item itemvalue="Application.BankNotesCount" />
         <item itemvalue="Application.InputAnalysis" />
         <item itemvalue="Application.EvenNumbers" />
