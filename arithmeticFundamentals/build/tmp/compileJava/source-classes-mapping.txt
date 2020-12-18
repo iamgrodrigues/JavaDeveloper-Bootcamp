@@ -1,6 +1,8 @@
-Challenges/InputAnalysis.java
- Challenges.InputAnalysis
-Challenges/PositiveNumbers.java
- Challenges.PositiveNumbers
 Challenges/EvenNumbers.java
  Challenges.EvenNumbers
+Challenges/PositiveNumbers.java
+ Challenges.PositiveNumbers
+Challenges/InputAnalysis.java
+ Challenges.InputAnalysis
+Challenges/BankNotesCount.java
+ Challenges.BankNotesCount
