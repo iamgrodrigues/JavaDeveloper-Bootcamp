@@ -17,6 +17,10 @@ public class TreeMapExample {
         capitalsTree.put("RJ", "Rio de Janeiro");
         capitalsTree.put("MG", "Belo Horizonte");
 
+        capitalsTree.entrySet().stream().forEach(entry -> {
+            System.out.println(entry.getKey() + " - " + entry.getValue());
+        });
+
         System.out.println(capitalsTree);
 
         System.out.println("What is the UF of the first capital in the TreeMap? " + capitalsTree.firstKey());
