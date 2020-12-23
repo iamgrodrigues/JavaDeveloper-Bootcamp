@@ -1,6 +1,6 @@
 package Threads;
 
-public class ThreadExample {
+public class Example {
 
     public static void main(String[] args) {
 
