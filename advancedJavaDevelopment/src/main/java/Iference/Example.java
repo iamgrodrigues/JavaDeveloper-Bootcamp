@@ -26,9 +26,8 @@ public class Example {
         var bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
         System.out.println(bufferedReader.lines().collect(joining())
                 .replaceAll(">", ">\n"));
-
 /*
-        /* on Java 8 we still have to declare our variables like below (with types instead of only var) * /
+        //on Java 8 we still have to declare our variables like below (with types instead of only var)
 
         URL url = new URL("https://docs.oracle.com/javase/10/language/");
         URLConnection urlConnection = url.openConnection();
@@ -36,7 +35,6 @@ public class Example {
         System.out.println(bufferedReader.lines().collect(Collectors.joining())
                 .replaceAll(">", ">\n"));
 */
-
     }
 
     public static void printFullName(String name, String lastName) {
