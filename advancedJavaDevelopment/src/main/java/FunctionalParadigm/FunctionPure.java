@@ -1,4 +1,4 @@
-package functionalParadigm;
+package FunctionalParadigm;
 
 import java.util.function.BiPredicate;
 

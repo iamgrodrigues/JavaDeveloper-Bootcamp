@@ -1,4 +1,4 @@
-package httpClient;
+package HttpClient;
 
 import java.io.IOException;
 import java.net.ProxySelector;

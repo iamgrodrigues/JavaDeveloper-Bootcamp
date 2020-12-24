@@ -1,4 +1,4 @@
-package functionalParadigm;
+package FunctionalParadigm;
 
 import java.util.HashMap;
 import java.util.Map;

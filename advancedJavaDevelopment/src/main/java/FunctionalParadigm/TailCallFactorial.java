@@ -1,4 +1,4 @@
-package functionalParadigm;
+package FunctionalParadigm;
 
 public class TailCallFactorial {
 
