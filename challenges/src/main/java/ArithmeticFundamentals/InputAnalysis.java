@@ -30,7 +30,7 @@
  *
  * */
 
-package arithmeticFundamentals;
+package ArithmeticFundamentals;
 
 import java.io.BufferedReader;
 import java.io.IOException;
