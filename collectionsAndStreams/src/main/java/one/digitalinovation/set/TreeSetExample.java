@@ -1,7 +1,6 @@
 package one.digitalinovation.set;
 
 import java.util.Iterator;
-import java.util.Map;
 import java.util.TreeSet;
 
 public class TreeSetExample {
@@ -44,7 +43,7 @@ public class TreeSetExample {
             System.out.println(capital);
         }
 
-        System.out.println("----------- Exercises of Comparators Lecture -----------");
+        /* System.out.println("----------- Exercises of Comparators Lecture -----------");
 
         System.out.println("----- natural numbers order by key -----");
 
@@ -54,6 +53,6 @@ public class TreeSetExample {
 
         System.out.println("----- reversed numbers order by key -----");
 
-        System.out.println(reversedTreeMap);
+        System.out.println(reversedTreeMap); */
     }
 }
