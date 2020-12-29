@@ -1,3 +1,54 @@
+/**
+ * Challenge
+ *
+ * Professor Girafales organized the uniform making for the school's classes to celebrate the end of the year.
+ * After some meetings, it was agreed that the students could choose their uniform color between white and red.
+ * Therefore, Girafales needs your help to organize the lists with who wants the uniform on each class, relating those
+ * uniforms by color, size (S, M or L), and by the student's name.
+ *
+ *
+ * Input
+ *
+ * Each case would have a value N(1 ≤ N ≤ 60) integer and positive, which N means the amount of uniforms to be made
+ * to that class. On the next 2 lines you will have the uniform's information,
+ * the first line will give the student's name, the second line will have the uniform's color ("white" or "red")
+ * and then followed by blank space the uniform's size ("S", "M" or "L"). The input will finish after N == 0 and
+ * this value should be ignored.
+ *
+ *
+ * Output
+ *
+ * For each input case you should print the data sorted by color in ascending order, size in descending order and
+ * last the student's name should sort in ascending order, as shown in the example below:
+ *
+ *
+ * -------------------------------------------------------------------------
+ * | input example                  | output example                       |
+ * |--------------------------------|--------------------------------------|
+ * |        9                       |                                      |
+ * |        Maria Jose              |        Red S Amaro Dinha             |
+ * |        White S                 |        Red S Baka Lhau               |
+ * |        Mangojata Mancuda       |        Red S Carlos Chade Losna      |
+ * |        Red S                   |        Red S Mangojata Mancuda       |
+ * |        Cezar Torres Mo         |        White S Cezar Torres Mo       |
+ * |        White S                 |        White S Maria Jose            |
+ * |        Baka Lhau               |        White M Juju Mentina          |
+ * |        Red S                   |        White L Adabi Finho |         |
+ * |        Juju Mentina            |        White L Severina Rigudinha    |
+ * |        White M                 |                                      |
+ * |        Amaro Dinha             |                                      |
+ * |        Red S                   |                                      |
+ * |        Adabi Finho             |                                      |
+ * |        White L                 |                                      |
+ * |        Severina Rigudinha      |                                      |
+ * |        White L                 |                                      |
+ * |        Carlos Chade Losna      |                                      |
+ * |        Red S                   |                                      |
+ * |                                |                                      |
+ * -------------------------------------------------------------------------
+ *
+ **/
+
 package SortingAndFilters;
 
 import java.io.BufferedReader;
@@ -41,11 +92,10 @@ public class YearEndUniform {
                         .thenComparing(Student::getName)));
 
         studentsList.forEach(student -> {
-            String feio = student.getColor() + " " + student.getSize() + " " + student.getName();
-//            String feio2 = student.getColor().concat(" ").concat(student.getSize().concat(" ").concat(student.getName()));
-            System.out.println(feio);
-//            System.out.println("**********");
-//            System.out.println(feio2);
+            String uniformList = student.getColor() + " " + student.getSize() + " " + student.getName();
+//            String uniformList = student.getColor().concat(" ").concat(student.getSize().concat(" ").concat(student.getName()));
+            System.out.println(uniformList);
+//            System.out.println(uniformList);
         });
 
     }
