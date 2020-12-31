@@ -29,30 +29,58 @@ public class CampingGame {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        Integer studentsAmount =  Integer.parseInt(br.readLine());
-        String winner;
+        List<Student> students = new ArrayList<>();
+        Integer studentsAmount;
+        Integer currentIndex;
+        Integer currentToken;
+        Integer looser;
 
-        List<Student> studentList = new ArrayList<>();
+        studentsAmount =  Integer.parseInt(br.readLine());
 
-        for (int i = 0; i < studentsAmount; i++) {
-            StringTokenizer st = new StringTokenizer(br.readLine());
-            List<String> studentsInfo = new ArrayList<>();
+        while (studentsAmount !=0) {
+            for (int i = 0; i < studentsAmount; i++) {
+                StringTokenizer st = new StringTokenizer(br.readLine());
+                List<String> studentsInfo = new ArrayList<>();
 
-            while (st.hasMoreTokens()) {
-                studentsInfo.add(st.nextToken());
+                while (st.hasMoreTokens()) {
+                    studentsInfo.add(st.nextToken());
+                }
+
+                Student student = new Student();
+
+                student.name = studentsInfo.get(0);
+                student.token = Integer.parseInt(studentsInfo.get(1));
+
+                students.add(student);
             }
 
-            Student student = new Student();
+            currentIndex = 0;
+            looser = 0;
+            currentToken = Integer.parseInt(String.valueOf(students.get(currentIndex).token));
 
-            student.name = studentsInfo.get(0);
-            student.token = Integer.parseInt(studentsInfo.get(1));
+            for (int i = 0; i < studentsAmount - 1; i++) {
+                if (currentToken == 0) {
+                    looser = currentIndex;
+                } else if (currentToken % 2 == 0) {
+                    looser = (students.size() - (currentToken % students.size()) + currentIndex) % students.size();
+                    currentToken = Integer.parseInt(String.valueOf(students.get(looser).token));
+                    students.remove(Integer.parseInt(String.valueOf(looser)));
 
-            studentList.add(student);
+                } else if (currentToken % 2 != 0) {
+                    looser = (currentToken % students.size() + currentIndex) % students.size();
+                    currentToken = Integer.parseInt(String.valueOf(students.get(looser).token));
+                    students.remove(Integer.parseInt(String.valueOf(looser)));
+                }
 
-            
+                currentIndex = (currentToken % 2 == 0) ?
+                        ((looser <= students.size() - 1) ?
+                                looser : 0) :
+                        ((looser == 0) ? (students.size() - 1) : (looser - 1));
+            }
 
-            System.out.println("Vencedor(a): " + winner);
-
+            System.out.println("Vencedor(a): " + students.get(0).name);
+            students.clear();
+            studentsAmount = Integer.parseInt(br.readLine());
         }
     }
 }
