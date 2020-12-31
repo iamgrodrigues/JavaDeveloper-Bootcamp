@@ -1,11 +1,11 @@
 package one.digitalinovation.comparators;
 
-public class Student implements Comparable<Student> {
+public class Students implements Comparable<Students> {
 
     private final String name;
     private final Integer age;
 
-    public Student(String name, Integer age) {
+    public Students(String name, Integer age) {
         this.name = name;
         this.age = age;
     }
@@ -24,7 +24,7 @@ public class Student implements Comparable<Student> {
     }
 
     @Override
-    public int compareTo(Student o) {
+    public int compareTo(Students o) {
         return this.getAge() - o.getAge();
     }
 

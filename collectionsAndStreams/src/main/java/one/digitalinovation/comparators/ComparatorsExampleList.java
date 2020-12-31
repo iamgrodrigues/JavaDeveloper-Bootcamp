@@ -8,15 +8,15 @@ import java.util.List;
 public class ComparatorsExampleList {
 
     public static void main(String[] args) {
-        List<Student> students = new ArrayList<>();
+        List<Students> students = new ArrayList<>();
 
-        students.add(new Student("Pedro", 19));
-        students.add(new Student("Carlos", 23));
-        students.add(new Student("Mariana", 21));
-        students.add(new Student("João", 18));
-        students.add(new Student("Thiago", 20));
-        students.add(new Student("George", 22));
-        students.add(new Student("Larissa", 21));
+        students.add(new Students("Pedro", 19));
+        students.add(new Students("Carlos", 23));
+        students.add(new Students("Mariana", 21));
+        students.add(new Students("João", 18));
+        students.add(new Students("Thiago", 20));
+        students.add(new Students("George", 22));
+        students.add(new Students("Larissa", 21));
 
         System.out.println("----- insertion order -----");
         System.out.println(students);
@@ -31,12 +31,12 @@ public class ComparatorsExampleList {
         System.out.println("----- reversed numbers order - age -----");
         System.out.println(students);
 
-        students.sort(Comparator.comparingInt(Student::getAge));
+        students.sort(Comparator.comparingInt(Students::getAge));
 
         System.out.println("----- natural numbers order - age (reference method) -----");
         System.out.println(students);
 
-        students.sort(Comparator.comparingInt(Student::getAge).reversed());
+        students.sort(Comparator.comparingInt(Students::getAge).reversed());
 
         System.out.println("----- reversed numbers order - age (reference method) -----");
         System.out.println(students);
