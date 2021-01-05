@@ -20,6 +20,8 @@ public class Student {
         this.state = state;
     }
 
+    public Student() { }
+
     public int getId() {
         return id;
     }
@@ -60,6 +62,6 @@ public class Student {
         sb.append(", age=").append(age);
         sb.append(", state='").append(state).append('\'');
         sb.append('}');
-        return null;
+        return sb.toString();
     }
 }
