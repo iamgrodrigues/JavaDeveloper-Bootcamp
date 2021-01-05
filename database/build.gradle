@@ -10,12 +10,18 @@ repositories {
 }
 
 dependencies {
-    compile group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
-    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.22'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-}
+// https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api
+//    compile group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
 
-test {
-    useJUnitPlatform()
+// https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.22'
+
+// https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.27.Final'
+
+// https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink
+//    compile group: 'org.eclipse.persistence', name: 'eclipselink', version: '3.0.0'
+
+// https://mvnrepository.com/artifact/junit/junit
+    testCompile group: 'junit', name: 'junit', version: '4.13.1'
 }
