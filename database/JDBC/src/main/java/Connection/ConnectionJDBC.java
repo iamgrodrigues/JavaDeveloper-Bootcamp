@@ -1,4 +1,4 @@
-package JDBC.Connection;
+package Connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,7 @@ public class ConnectionJDBC {
 
     public static void main(String[] args) throws SQLException {
 
-        String urlConnection = "jdbc:mysql://localhost/digital_innovation_one";
+        String urlConnection = "jdbc:mysql://localhost/jdbc_studies";
 
         try (Connection conn = DriverManager.getConnection(urlConnection, "root", "password")){
             System.out.println("The Connection has been Made");
@@ -21,7 +21,7 @@ public class ConnectionJDBC {
 
 //        String driver = "mysql";
 //        String dataBaseAddress = "localhost";
-//        String dataBaseName = "digital_innovation_one";
+//        String dataBaseName = "jdbc_studies";
 //        String user = "root";
 //        String password = "password";
 //

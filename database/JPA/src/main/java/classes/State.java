@@ -1,4 +1,4 @@
-package JPA.Classes;
+package classes;
 
 import javax.persistence.*;
 import java.util.ArrayList;

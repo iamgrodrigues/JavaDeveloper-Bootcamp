@@ -1,4 +1,4 @@
-package JPA.Classes;
+package classes;
 
 import javax.persistence.*;
 
@@ -65,7 +65,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Aluno{" +
+        return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +

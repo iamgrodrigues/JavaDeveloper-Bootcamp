@@ -1,14 +1,13 @@
-package JPA.Part1;
+package part1;
 
-import JPA.Classes.State;
-import JPA.Classes.Student;
+import classes.Student;
+import classes.State;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public class ExecutionPart1 {
-
     public static void main(String[] args) {
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("part1-DIO");

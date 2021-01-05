@@ -1,4 +1,4 @@
-package JDBC.Query;
+package Query;
 
 import java.util.List;
 
