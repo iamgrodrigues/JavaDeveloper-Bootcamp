@@ -1,7 +1,7 @@
 package part3;
 
-import classes.Student;
 import classes.State;
+import classes.Student;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -37,11 +37,11 @@ public class ExecutionPart3 {
 
         // 2.2 - Performing the find() method of EntityManager
         // Returns only 1 result
-        Student studentEntityManager = entityManager.find(Student.class, 1);
+//        Student studentEntityManager = entityManager.find(Student.class, 1);
 
         // To return a list as result we have to use the methods on parts 2.3 - 2.4 - 2.5
 
-        System.out.println("Query studentEntityManager: " + studentEntityManager);
+//        System.out.println("Query studentEntityManager: " + studentEntityManager);
 
         // =============================================================================================================
 
@@ -59,7 +59,7 @@ public class ExecutionPart3 {
 //        List<Student> studentSQLList = entityManager
 //                .createNativeQuery(sqlList, Student.class)
 //                .getResultList();
-//
+
 //        System.out.println("Query studentSQL: " + studentSQL);
 //        studentSQLList.forEach(Student -> System.out.println("Query studentSQLList: " + Student));
 
