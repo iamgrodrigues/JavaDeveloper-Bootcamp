@@ -13,13 +13,25 @@ public class ExecutionPart2 {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("part2-DIO");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-        State stateToAdd = new State("Rio de Janeiro", "RJ");
-        Student studentToAdd = new Student("Daniel", 29, stateToAdd);
+        State stateToAdd1 = new State("Rio de Janeiro", "RJ");
+        State stateToAdd2 = new State("São Paulo", "SP");
+        State stateToAdd3 = new State("Mato Grosso", "MT");
+        Student studentToAdd1 = new Student("Daniel", 29, stateToAdd1);
+        Student studentToAdd2 = new Student("Paulo", 20, stateToAdd2);
+        Student studentToAdd3 = new Student("Taisa", 20, stateToAdd2);
+        Student studentToAdd4 = new Student("Guilherme", 20, stateToAdd2);
+        Student studentToAdd5 = new Student("Fernanda", 17, stateToAdd3);
 
         entityManager.getTransaction().begin();
 
-        entityManager.persist(stateToAdd);
-        entityManager.persist(studentToAdd);
+        entityManager.persist(stateToAdd1);
+        entityManager.persist(stateToAdd2);
+        entityManager.persist(stateToAdd3);
+        entityManager.persist(studentToAdd1);
+        entityManager.persist(studentToAdd2);
+        entityManager.persist(studentToAdd3);
+        entityManager.persist(studentToAdd4);
+        entityManager.persist(studentToAdd5);
 
         entityManager.getTransaction().commit();
 
