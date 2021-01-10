@@ -1,12 +1,12 @@
 package com.innovationone.springwebmvc.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
+@Data
 public class Jedi {
 
     private String name;
